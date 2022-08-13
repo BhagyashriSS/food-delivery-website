@@ -1,0 +1,240 @@
+/* CSS reset */
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navigation bar  */
+#navbar{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    top:0px;
+   
+}
+/* navbar logo and image */
+#logo{
+    margin: 5px 5px;
+    height: 100px;
+    /* border: 2px solid black; */
+}
+#logo img{
+    margin: 6px 6px;
+    height: 90px;
+     /* filter: invert(); */
+    /* border: 2px solid  green; */
+}
+/* navbar :list styling */
+ #navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;/*removes that circles*/
+    font-size: 1.5rem;
+    font-family: 'Fredoka', sans-serif;
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;/*removes underlines*/
+    transition-property: text;
+}
+#navbar ul li a:hover{
+    color:rgb(0, 0, 0);
+    background-color: rgb(244, 245, 245);
+    box-shadow: 4px 4px 10px 4px rgb(104, 207, 238);
+     font-size: 30px;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    height: 500px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url('../images/bakg3.jpg') no-repeat center center/cover;
+    top:0px;
+    left:0px;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity:1;
+}
+/* services section */
+#services{
+    margin: 34px;;
+    display: flex;
+}
+#services .box{
+    border: 2px solid red;
+    padding: 34px;
+    margin :3px  6px;
+    border-radius: 30px;
+    background-color: rgb(250, 178, 91);
+}
+#services.box img{
+   height:fit-content;
+   width: fit-content;
+   border-radius: 3px;
+   display: block;
+   margin: auto;
+   /* width: 150px; */
+}
+.resize
+{
+    height: 220px;
+    width: 339px;
+    margin: 0;
+    padding: 0;
+
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url('../images/contact.jpg') no-repeat center center/cover;
+}
+footer{
+    background-color: #383431;
+     color: rgb(248, 249, 252) ;
+     padding: 9px 20px;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+ #contact-box input,
+#contact-box textarea{
+   border: 4px solid rgb(4, 73, 126);
+   border-radius: 15px;
+    width:100%;
+    padding: 0.8rem;
+
+} 
+#contact-box input,textarea{
+    font-size: large;
+    font-family: 'Fredoka', sans-serif;
+}
+
+ #contact-box form{
+    width:60%;
+} 
+#contact-box lebel{
+    font-size: 0.5cm;
+    font-weight:bold;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* utility class */
+#home h1{
+    text-align: center;
+    color: white;
+    text-shadow: 3px 4px 5px #0c0b0a;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 100%;
+}
+
+/* client-section */
+#client-section{
+   
+    position: relative;
+    text-shadow: white;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../images/bakg4.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 95%;
+    z-index: -1;;
+    opacity: 0.4;
+}
+#clients
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#client img{
+    height: fit-content;
+}
+.client-item{
+    /* height: 200px;
+    width: 200px; */
+    padding: 24px;
+    margin: 10px;
+}
+.sizing{
+    height: 132px;
+    width: 210px;
+}
+.h-primary{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 4rem;
+    padding: 20px;
+    
+}
+.h-secondary{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    
+    padding: 6px 20px;
+    border: 2px solid rgb(20, 246, 39);
+    background-color: rgb(245, 240, 240);
+    border-radius: 10px;
+    color: rgb(6, 1, 8);
+    margin: 27px ;
+    font-size: 1.7rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.btn:hover
+{
+    font-weight: bold;
+   
+    color:rgb(0, 0, 0);
+    background-color: rgb(117, 234, 94);
+    box-shadow: 4px 4px 10px 4px rgb(5, 5, 5);
+     font-size: 30px;
+}
+.center{
+    text-align: center;
+    justify-content: center;
+}
+
